@@ -7,13 +7,12 @@ html, body {
 }
 
 body {
-    max-width: 896px;
     margin: 0 auto;
     padding: 1em;
-    background: #aadfc5;
+    background: #f8f1f1;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    height: 100vh;
+    height: 896px;
     font-weight: 600;
 }
 
@@ -37,13 +36,13 @@ header {
  
 .pet-pow-logo {
     width: 50px;
-    filter: invert(51%) sepia(16%) saturate(1157%) hue-rotate(98deg) brightness(95%) contrast(87%);
+    filter: invert(67%) sepia(8%) saturate(1710%) hue-rotate(130deg) brightness(91%) contrast(88%);
     float: left;
     
 }
 .logo {
     text-decoration: none;
-    color: #47946e;
+    color: #5eaaa8;
     font-weight: 700;
     font-size: 1em;
 }
@@ -55,7 +54,15 @@ header {
     margin: 0;
     width: 50px;
     cursor: pointer;
-    filter: invert(51%) sepia(16%) saturate(1157%) hue-rotate(98deg) brightness(95%) contrast(87%);
+    filter: invert(67%) sepia(8%) saturate(1710%) hue-rotate(130deg) brightness(91%) contrast(88%);
+}
+
+#container {
+    /* display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background: yellow; */
 }
 
 
@@ -63,7 +70,7 @@ h1 {
     margin: 0;
     padding: 1em;
     margin-bottom: 1em;
-    color: #47946e;
+    color: #5eaaa8;
     font-size: 20px;
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
@@ -76,24 +83,18 @@ h1 {
     padding: 2em 1em;
     height: 70%;
     border-radius: 1em;
-    background: #47946e;
+    background: #5eaaa8;
 }
 
-main p {
-    max-width: 400px;
-    margin: 1em 0 2em 0;
-    padding: 1em 0 1em 1.5em;
-    text-align: left;
+main h1 {
+    text-align: center;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: 600;
-    color: #aadfc5;
-    
+    color: #f8f1f1;
+    margin-bottom: 0;
 }
 
-p {
-    line-height: 1.5;
-}
 
 .btn-container {
     margin: 0 auto;
@@ -108,25 +109,37 @@ p {
     margin: .5em 0.5em 1em 0.5em;
     padding: 1em;
     border-radius: .7em;
-    background: #aadfc5;
+    background: #a3d2ca;
     text-decoration: none;
-    color: #47946e;
+    color: #5eaaa8;
     font-weight: 600;
     box-shadow: 5px 5px 10px #35664e;
 }
-
 .pet-container {
     display: block;
-    position: absolute;
-    max-width: 500px;
-    margin-top: 2em;
+    position: relative;
+    top: 0;
     left: 0;
-    right: 0;
+    background: #f48956;
+    margin: 0 1em;
 }
 
-.pet-container img {
-    max-width: 450px;
+.frame{
+    height: 350px;
+    position: relative;
+    top: 0;
+    left: 0;
+    background: #f8f1f1;
+    transform: rotate(10deg);
+}
+
+.puppy {
+    height: 280px;
+    position: absolute;
+    top: 65px;
+    left: 00px;
     filter: grayscale(30%);
+    transform: rotate(10deg);
 }
 
 
@@ -135,7 +148,7 @@ p {
 nav {
     position: fixed;
     z-index: 2;
-    background: #aadfc5;
+    background: #a3d2ca;
     height: 100vh;
     right: 0;
     top: 0;
@@ -156,16 +169,16 @@ nav ul {
 nav ul li {
     margin-bottom: 1em;
     padding: 1em .5em 1em 1.5em;
-    background: #7cd2a8;
+    background: #5eaaa8;
     cursor: pointer;
-    box-shadow: 3px 3px 10px #35664e;
+    box-shadow: 3px 3px 10px #396866;
 }
 
 nav ul li:hover {
-    background: #aadfc5;
+    background: #a3d2ca;
 }
 nav ul li a {
-    color: #47946e;
+    color: #f8f1f1;
     text-decoration: none;
 }
 
@@ -174,15 +187,15 @@ nav ul li a {
     opacity: 1;
     transform: translateX(0)
 }
-nav svg {
+nav li img {
     cursor: pointer;
-    width: 30px;
+    width: 50px;
     font-weight: 600;
 }
 .exit { 
     width: 50px;
     background: none;
-    filter: invert(51%) sepia(16%) saturate(1157%) hue-rotate(98deg) brightness(95%) contrast(87%);
+    filter: invert(67%) sepia(8%) saturate(1710%) hue-rotate(130deg) brightness(91%) contrast(88%);
     box-shadow: none;
 }
 
@@ -217,3 +230,5 @@ ul{
     padding-left: 0;
     filter: grayscale(30%) ;
 }
+
+

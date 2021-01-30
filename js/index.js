@@ -14,3 +14,5 @@ exit.addEventListener('click', () => {
     nav.classList.remove('open-nav');
     wrapper.style.filter = 'blur(0)';
 })
+
+
